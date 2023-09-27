@@ -1,28 +1,28 @@
-function click_calcular(){
+function click_calcular() {
     let valorA = document.getElementById("txtValorA").value;
     let valorB = document.getElementById("txtValorB").value;
     let valorC = document.getElementById("txtValorC").value;
 
-    if(valorA === ""){
+    if (valorA === "") {
         alert(`Insira um valor no A`);
     }
-    else if(valorB === ""){
+    else if (valorB === "") {
         alert(`Insira um valor no B`);
     }
-    else if(valorC === ""){
+    else if (valorC === "") {
         alert(`Insira um valor no C`);
     }
-    else{
-        if(valorA == 0 ){
+    else {
+        if (valorA == 0) {
             alert(`O valor A não pode ser ZERO.`)
         }
-        else{
+        else {
             const delta = (valorB * valorB) - 4 * valorA * valorC;
 
-            if(delta < 0){
+            if (delta < 0) {
                 alert(`Seu delta é NEGATIVO.`)
             }
-            else{
+            else {
                 const x1 = (-valorB + Math.sqrt(delta)) / 2 * valorA;
                 const x2 = (-valorB - Math.sqrt(delta)) / 2 * valorA;
 
@@ -36,5 +36,5 @@ function click_limpar() {
     document.getElementById("txtValorB").value = "";
     document.getElementById("txtValorC").value = "";
     document.getElementById("txtResultado").innerHTML = "";
-    
+
 }
