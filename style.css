@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(190deg, #00d9ff, #015c39);
+}
+.tabela{
+    height: 400px;
+    background-color: white;
+    width: 800px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 200px;
+    border: black solid 2px;
+}
+.coluna{
+    padding: 8px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 100px;
+}
+#botao1{
+    background-color: rgb(0, 225, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+h1{
+    font-size: 12pt;
+}
+#vermelho{
+    color:red;
+}
+#azul{
+    color:blue;
+}
+#txtResultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#palavra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
